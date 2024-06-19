@@ -248,5 +248,9 @@ $(document).ready(function () {
     loadEntityForm(entity);
   });
 
+  $("#kattiau-link").click(function () {
+    location.reload();
+});
+
   generateNavLinks();
 });
