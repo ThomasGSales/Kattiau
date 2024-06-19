@@ -1,0 +1,618 @@
+var settings = {
+  "url": "http://localhost:3000/getListaCategoria/?ID_Categoria=",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarCategoria",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "Nome": "Arroz"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarCategoria",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Categoria": 2,
+    "Nome": "Arroz"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarCategoria/1",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+var settings = {
+  "url": "http://localhost:3000/getListaCliente/?ID_Cliente=12",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarCliente",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "Nome": "Arroz",
+    "Email": "arroz@arroz.com"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarCliente",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Cliente": 2,
+    "Nome": "Arroz",
+    "Email": "arroz@arroz"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarCliente/:ID_Cliente",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/getListaProduto/?ID_Produto=",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarProduto",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "Nome": "Produto_11",
+    "Preco": "22.47"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarProduto",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Produto": 12,
+    "Nome": "Produto_HAHA",
+    "Preco": "22.47"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarProduto/12",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+var settings = {
+  "url": "http://localhost:3000/getListaPedido/?ID_Pedido=",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarPedido",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "DataPedido": "2022-06-15",
+    "ID_Cliente": 32
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarPedido",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Pedido": 12,
+    "DataPedido": "2022-03-12",
+    "ID_Cliente": 32
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarPedido/12",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+var settings = {
+  "url": "http://localhost:3000/getListaEndereco/?ID_Endereco=",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarEndereco",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "Rua": "Street",
+    "Cidade": "Casca",
+    "ID_Cliente": 1
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+
+
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarEndereco",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Endereco": 1,
+    "Rua": "Street",
+    "Cidade": "Casca",
+    "ID_Cliente": 1
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarEndereco/1",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+var settings = {
+  "url": "http://localhost:3000/getListaFornecedor/?ID_Fornecedor=",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarFornecedor",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "Nome": "Arroz",
+    "Email": "arroz@arroz"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarFornecedor",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "Nome": "Arroz",
+    "Email": "arroz@arroz",
+    "ID_Fornecedor": 1
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarFornecedor/:ID_Fornecedor",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+
+var settings = {
+  "url": "http://localhost:3000/getListaDetalhespedido/?ID_Pedido=1&ID_Produto=1",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarDetalhespedido",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Pedido": 1,
+    "ID_Produto": 1,
+    "Quantidade": "5",
+    "PrecoUnitario": "12.9"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarDetalhespedido",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Pedido": 1,
+    "ID_Produto": 1,
+    "Quantidade": 1,
+    "PrecoUnitario": 150.9
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarDetalhespedido/1/2",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/getListaProdutocategoria/?ID_Categoria=3&ID_Produto=477",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarProdutocategoria",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Produto": 477,
+    "ID_Categoria": 4
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarProdutocategoria",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Produto": 477,
+    "ID_Categoria": 3,
+    "Novo_Produto": 520,
+    "Novo_Categoria": 4
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarProdutocategoria/1/2",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/getListaProdutofornecedor/",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarProdutofornecedor",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Produto": 118,
+    "ID_Fornecedor": 1
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarProdutofornecedor",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Produto": 118,
+    "ID_Fornecedor": 1,
+    "Novo_Produto": 520,
+    "Novo_Fornecedor": 4
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarProdutofornecedor/:ID_Fornecedor/2",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/getListaPagamento/?ID_Pedido=1&ID_Pagamento=1",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/postCadastrarPagamento",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Pagamento": 1,
+    "Metodo": "1",
+    "Valor": "150.90",
+    "ID_Pedido": 1
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+var settings = {
+  "url": "http://localhost:3000/putAtualizarPagamento",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "ID_Pedido": 1,
+    "ID_Pagamento": 1,
+    "Metodo": 1,
+    "Valor": 150.9
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+
+
+var settings = {
+  "url": "http://localhost:3000/deleteDeletarPagamento/1/1",
+  "method": "DELETE",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
